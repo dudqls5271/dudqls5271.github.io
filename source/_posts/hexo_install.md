@@ -1,5 +1,5 @@
 ---
-title: Github Page에 hexo 이용해서 만들기 블로그 만들기 (1)
+title: Github Page와 Hexo로 블로그 만들고 테마 적용하기
 tags: [hexo]
 ---
 
@@ -40,13 +40,14 @@ $ hexo init
 ```bash
 $ npm install
 ```
+
 ![화면 캡처 2021-05-08 233215](https://user-images.githubusercontent.com/49426352/117543494-1cb27480-b058-11eb-87b3-c6412440b3b2.png)
 
 ### 3. 테마 설정
 
 다음은 테마 설정이다.
 테마는 다른 사람들이 만들어 준 테마를 사용하면된다. [[여기]](https://code.visualstudio.com/download)서 테마를 고를수 있다.
-원하는 테마를 고른뒤 그 사람의 Github에 들어가서 URL을 복사 해준뒤
+원하는 테마를 고른뒤 그 사람의 Github에 들어가서 URL을 복사 해준뒤 다음과 같이 콘솔에 적어주면 된다.
 
 ![화면 캡처 2021-05-08 234329](https://user-images.githubusercontent.com/49426352/117543513-2936cd00-b058-11eb-96ae-377f08cbf7d1.png)
 
@@ -57,3 +58,97 @@ $ git clone 링크
 
 그러면 themes에 추가가 된것을 볼 수 있을것이다.
 에제 theme을 본인 마음대로 바꿔주면 된다.
+
+### 4. 기본 정보 수정
+
+> [여기](https://hexo.io/docs/) 에서 다양한 옵션을 볼 수 있습니다!
+
+### 4-1. site 기본 정보 수정
+
+\_config.yml에 들어가면 site 가 있을 것입니다.
+
+```bash
+# Site
+title: YB_BIN Blog
+subtitle:
+description:
+keywords:
+author:
+language:
+timezone:
+```
+
+위의 부분을 찾아서 원하는대로 수정하면 된다.
+나 같은 경우는 다음과 같이 수정다
+
+```bash
+# Site
+title: YB_BIN Blog
+subtitle: '개인 공부 및 작업물 공유'
+description: "YB_BIN의 블로그 입니다."
+keywords: programming, java, html, web, front
+email: youngbin5271@gmail.com
+author: 'LEE YoungBin'
+language: ko
+timezone: 'Asia/Seoul'
+```
+
+### 4-2. URL 정보 수정
+
+```bash
+# URL
+github.io/project
+url: http://example.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+```
+
+라고 되어있는데, 여기서 url에 자신의 Github 유저명을 넣어서 http://username.github.io을 넣어주면 된다!
+
+나는 다음과 같이 수정 했다.
+
+```bash
+# URL
+github.io/project
+url: http://dudqls5271.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+```
+
+### 4-3. Deploy 설정3
+
+이 항목에 본인의 Gitpage Repository 정보를 넣어서 수정해주면 된다.
+여기도 username 바꿔줘야 한다.
+
+```bash
+# Deployment
+deploy:
+  type: git
+```
+
+```bash
+# Deployment
+deploy:
+  type: git
+  repo: https://github.com/dudqls5271/dudqls5271.github.io
+  branch: master
+```
+
+### 5. hexo 테스트
+
+```bash
+$ hexo server
+```
+
+> 줄여서 hexo s 도 가능하다.
+
+위의 문구를 콘솔에 치면 서버가 열렸다는 문구와 같이 http://localhost:4000 가 열릴 것이다.
+여기에 들어가면 본인이 설정한 블로그를 볼 수 있습니다.
