@@ -112,13 +112,3 @@ md파일이 있는곳에 포스트의 이름과 동의한 폴더를 만들고 �
 자세한 설명은 [여기](https://www.npmjs.com/package/hexo-asset-link)에서 확인할 수 있다.
 
 ---
-
-### 검색인진에 등록하기
-
-### 구글
-
-구글 애널리틱스에 가입을 먼저 해줘야 한다.
-
-그 후 사이트 정보를 입력하고 추척ID를 발급 받는다.
-
-\_config.yml에서 plugins 항목에 google-analytics를 추가해준다.
