@@ -125,3 +125,18 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+
+# sitemap auto generator
+sitemap:
+  path: sitemap.xml
+
+# rss feed auto generator
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+
+plugins:
+  google-analytics:
+    # Google Analytics tracking id
+    tracking_id: G-H5ZH0Y9TPZ
