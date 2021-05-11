@@ -22,6 +22,8 @@ SEO란?:
 
 이 플러그인은 rel="external nofollow" 속성을 추가하여 외부 링크 크롤링을 막아 준다고 한다.
 
+<!--more-->
+
 ```bash
    $ npm install hexo-autonofollow --save
 
@@ -110,5 +112,3 @@ md파일이 있는곳에 포스트의 이름과 동의한 폴더를 만들고 �
 으로 간단하게 접근이 가능해진다.
 
 자세한 설명은 [여기](https://www.npmjs.com/package/hexo-asset-link)에서 확인할 수 있다.
-
----
