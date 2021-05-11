@@ -15,6 +15,8 @@ vscode와 NodeJS을 깔아주었다.
 
 NodeJs는 다음과 같이 cmd에 Node라고 처주면 설치확인이 가능하다.
 
+<!--more-->
+
 ### 1. 레포지터리 만들기
 
 우선 github에 새로운 레포지터리를 만들어 준다.
@@ -152,3 +154,42 @@ $ hexo server
 
 위의 문구를 콘솔에 치면 서버가 열렸다는 문구와 같이 http://localhost:4000 가 열릴 것이다.
 여기에 들어가면 본인이 설정한 블로그를 볼 수 있습니다.
+
+### 6. Github에 배포하기
+
+이제 지금 까지 만든 Hexo 블로그를 Github로 배포를 해보자.
+아까 Hexo을 설치하던 콘솔 창을 다시 열어 준다.
+
+아래의 두 명령어를 입력해서 생성, 배포해준다.
+
+### Hexo를 이용해 정적 웹 리소스 생성하기
+
+```bash
+  $ hexo generate
+```
+
+> 줄여서 hexo g도 가능하다.
+
+### github에 배포하기
+
+```bash
+  $ hexo deploy
+```
+
+> 줄여서 hexo d도 가능하다.
+
+> 이 두가지를 합쳐서 <br> hexo generate -deploy 혹은 hexo g -d로 사용가능하다.
+
+혹시라도 배포시
+
+> ERROR Deployer not found: git<br>
+
+라는 오류 문구가 나오면
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+를 통해서 플러그인을 다시 설피 해준다.
+
+여기까지 하면 https://username.github.io로 들어가보면 hexo 페이지가 보일 것 이다.
