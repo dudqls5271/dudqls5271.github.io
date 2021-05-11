@@ -78,7 +78,7 @@
 			
 				<li><a href="/" >home</a></li>
 			
-				<li><a target="_blank" rel="noopener" href="https://blog.naver.com/PostList.nhn?blogId=dudqls5271" >naver blog</a></li>
+				<li><a target="_blank" rel="noopener" href="https://blog.naver.com/PostList.nhn?blogId=dudqls5271" >naver</a></li>
 			
 				<li><a href="/" >Profile</a></li>
 			
@@ -186,7 +186,7 @@
 				
 					<li style="width: 20%"><a href="/">home</a></li>
 		        
-					<li style="width: 20%"><a target="_blank" rel="noopener" href="https://blog.naver.com/PostList.nhn?blogId=dudqls5271">naver blog</a></li>
+					<li style="width: 20%"><a target="_blank" rel="noopener" href="https://blog.naver.com/PostList.nhn?blogId=dudqls5271">naver</a></li>
 		        
 					<li style="width: 20%"><a href="/">Profile</a></li>
 		        
@@ -249,38 +249,9 @@
 </blockquote>
 <hr>
 <h3 id="hexo-autonofollow"><a href="#hexo-autonofollow" class="headerlink" title="hexo-autonofollow"></a>hexo-autonofollow</h3><p>이 플러그인은 rel=”external nofollow” 속성을 추가하여 외부 링크 크롤링을 막아 준다고 한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-autonofollow --save</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nofollow:</span><br><span class="line"><span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">exclude:</span><br><span class="line">- exclude1.com</span><br><span class="line">- exclude2.com</span><br></pre></td></tr></table></figure>
-
-<h3 id="hexo-auto-canonical"><a href="#hexo-auto-canonical" class="headerlink" title="hexo-auto-canonical"></a>hexo-auto-canonical</h3><p>이 플러그인은 대표 URL을 지정해준다고 한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-auto-canonical</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- autoCanonical(config, page) %&gt;</span><br></pre></td></tr></table></figure>
-
-<p>나는 head.ejs안에 위의 코드를 넣었다, 근데 테마마다 다름으로 주위 해줘야한다.<br>Control + P 을 누르면 파일 검색이 가능하다.</p>
-<h3 id="hexo-generator-seo-friendly-sitemap"><a href="#hexo-generator-seo-friendly-sitemap" class="headerlink" title="hexo-generator-seo-friendly-sitemap"></a>hexo-generator-seo-friendly-sitemap</h3><p>이 플러그인은 더욱 효율적으로 크롤링을 할 수 있도록 사이트맵 xml 파일을 자동으로 생성해 주는 것 이다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-seo-friendly-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>_config.yml에 아래 코드를 추가 해준다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># sitemap auto generator</span></span><br><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure>
-
-<h3 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a>hexo-generator-feed</h3><p>RSS 피드를 만들어서 일종의 블로그 구독기능을 만들어 주는 것이다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-
-<p>_config.yml에 아래 내용을 추가 해준다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment"># rss feed auto generator</span></span><br><span class="line">feed:</span><br><span class="line">  <span class="built_in">type</span>: rss2</span><br><span class="line">  path: rss2.xml</span><br><span class="line">  <span class="built_in">limit</span>: 20</span><br></pre></td></tr></table></figure>
-
-<p>각각<br>type : feed의 종류 (atom/rss2) - * 네이버는 atom을 지원하지 않음<br>path : feed가 생성될 경로(default : atom.xml, rss2.xml)<br>limit : 최신 포스트 수 설정 (0 또는 false - 전체 포스트)</p>
-<h3 id="hexo-asset-link-필수-설치"><a href="#hexo-asset-link-필수-설치" class="headerlink" title="hexo-asset-link 필수 설치"></a>hexo-asset-link <em>필수 설치</em></h3><p>말 그래도 이 플러그인은 필수 설치이다.<br>내가 평소에 md파일에 글을 올리때 vs코드를 사용하는데, 이미지를 올릴때는 Github에 들어가서 이미지 파일을 따로 넣어줘야 했는데 이 플러그인을 설치해주면</p>
-<p>md파일이 있는곳에 포스트의 이름과 동의한 폴더를 만들고 이미지를 넣어주면 아래와 같이 나온다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">+-- _posts/</span><br><span class="line">|   +-- hexo_insatall.md</span><br><span class="line">|   +-- hexo_insatall/</span><br><span class="line">|       +-- Test-Image.png</span><br><span class="line">|       +-- Test-Other-File.pdf</span><br></pre></td></tr></table></figure>
-
-<p>그러면 이제 이미지에 접근할때</p>
-<p>!”[이미지 설명]”(Test-Image)<br>으로 간단하게 접근이 가능해진다.</p>
-<p>자세한 설명은 <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-asset-link">여기</a>에서 확인할 수 있다.</p>
-<hr>
-
+    
+    <a class="article-more-a" href="/2021/05/10/hexo_Plugin/#more">more >></a>
+    
     
 
     
@@ -369,49 +340,9 @@
 <h3 id="기본-설치-프로그램"><a href="#기본-설치-프로그램" class="headerlink" title="기본 설치 프로그램"></a>기본 설치 프로그램</h3><p>vscode와 NodeJS을 깔아주었다.<br><a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">vscode</a>, <a target="_blank" rel="noopener" href="https://nodejs.org/ko/">NodeJS</a> 다운 링크</p>
 <p><img src="https://user-images.githubusercontent.com/49426352/117543472-09070e00-b058-11eb-8d5e-d3ffd3693707.png" alt="p2"></p>
 <p>NodeJs는 다음과 같이 cmd에 Node라고 처주면 설치확인이 가능하다.</p>
-<h3 id="1-레포지터리-만들기"><a href="#1-레포지터리-만들기" class="headerlink" title="1. 레포지터리 만들기"></a>1. 레포지터리 만들기</h3><p>우선 github에 새로운 레포지터리를 만들어 준다.<br><img src="https://user-images.githubusercontent.com/49426352/117542272-e9b9b200-b052-11eb-9ab4-2cbaae5240e8.png" alt="p1"></p>
-<p>여기서 중요한것은 “자신의Github로ID”.githud.io로 만들어줘야 한다는 점이다.<br>나의 Github로 보자면 dudqls5271.github.io가 되는것이다.</p>
-<h3 id="2-hexo-설치"><a href="#2-hexo-설치" class="headerlink" title="2. hexo 설치"></a>2. hexo 설치</h3><p>다음 사진과 같이 입력 해주면 hexo 기본설치가 시작 된다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://user-images.githubusercontent.com/49426352/117543483-14f2d000-b058-11eb-90ee-848b32980972.png" alt="화면 캡처 2021-05-08 233126"></p>
-<p>설치가 완료 되면 다음과 같이 여러개의 폴더 들이 생긴 것을 볼 수가 있다.</p>
-<p>마지막으로 아래을 입력해주면 hexo에 필요한 파일들이 설치가 된다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://user-images.githubusercontent.com/49426352/117543494-1cb27480-b058-11eb-87b3-c6412440b3b2.png" alt="화면 캡처 2021-05-08 233215"></p>
-<h3 id="3-테마-설정"><a href="#3-테마-설정" class="headerlink" title="3. 테마 설정"></a>3. 테마 설정</h3><p>다음은 테마 설정이다.<br>테마는 다른 사람들이 만들어 준 테마를 사용하면된다. <a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">[여기]</a>서 테마를 고를수 있다.<br>원하는 테마를 고른뒤 그 사람의 Github에 들어가서 URL을 복사 해준뒤 다음과 같이 콘솔에 적어주면 된다.</p>
-<p><img src="https://user-images.githubusercontent.com/49426352/117543513-2936cd00-b058-11eb-96ae-377f08cbf7d1.png" alt="화면 캡처 2021-05-08 234329"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> 링크</span><br></pre></td></tr></table></figure>
-
-<p>그러면 themes에 추가가 된것을 볼 수 있을것이다.<br>에제 theme을 본인 마음대로 바꿔주면 된다.</p>
-<h3 id="4-기본-정보-수정"><a href="#4-기본-정보-수정" class="headerlink" title="4. 기본 정보 수정"></a>4. 기본 정보 수정</h3><blockquote>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">여기</a> 에서 다양한 옵션을 볼 수 있습니다!</p>
-</blockquote>
-<h3 id="4-1-site-기본-정보-수정"><a href="#4-1-site-기본-정보-수정" class="headerlink" title="4-1. site 기본 정보 수정"></a>4-1. site 기본 정보 수정</h3><p>_config.yml에 들어가면 site 가 있을 것입니다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: YB_BIN Blog</span><br><span class="line">subtitle:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">author:</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure>
-
-<p>위의 부분을 찾아서 원하는대로 수정하면 된다.<br>나 같은 경우는 다음과 같이 수정다</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: YB_BIN Blog</span><br><span class="line">subtitle: <span class="string">&#x27;개인 공부 및 작업물 공유&#x27;</span></span><br><span class="line">description: <span class="string">&quot;YB_BIN의 블로그 입니다.&quot;</span></span><br><span class="line">keywords: programming, java, html, web, front</span><br><span class="line">email: youngbin5271@gmail.com</span><br><span class="line">author: <span class="string">&#x27;LEE YoungBin&#x27;</span></span><br><span class="line">language: ko</span><br><span class="line">timezone: <span class="string">&#x27;Asia/Seoul&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-URL-정보-수정"><a href="#4-2-URL-정보-수정" class="headerlink" title="4-2. URL 정보 수정"></a>4-2. URL 정보 수정</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">github.io/project</span><br><span class="line">url: http://example.com</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: <span class="literal">true</span></span><br><span class="line">  trailing_html: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>라고 되어있는데, 여기서 url에 자신의 Github 유저명을 넣어서 <a target="_blank" rel="noopener" href="http://username.github.io을/">http://username.github.io을</a> 넣어주면 된다!</p>
-<p>나는 다음과 같이 수정 했다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">github.io/project</span><br><span class="line">url: http://dudqls5271.github.io</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: <span class="literal">true</span></span><br><span class="line">  trailing_html: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3-Deploy-설정3"><a href="#4-3-Deploy-설정3" class="headerlink" title="4-3. Deploy 설정3"></a>4-3. Deploy 설정3</h3><p>이 항목에 본인의 Gitpage Repository 정보를 넣어서 수정해주면 된다.<br>여기도 username 바꿔줘야 한다.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/dudqls5271/dudqls5271.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-hexo-테스트"><a href="#5-hexo-테스트" class="headerlink" title="5. hexo 테스트"></a>5. hexo 테스트</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>줄여서 hexo s 도 가능하다.</p>
-</blockquote>
-<p>위의 문구를 콘솔에 치면 서버가 열렸다는 문구와 같이 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> 가 열릴 것이다.<br>여기에 들어가면 본인이 설정한 블로그를 볼 수 있습니다.</p>
-
+    
+    <a class="article-more-a" href="/2021/05/08/hexo_install/#more">more >></a>
+    
     
 
     
