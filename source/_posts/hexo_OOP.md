@@ -15,6 +15,8 @@ tags: [java]
 - 프로그램의 개발과 보수를 간편하게 만든다
 - 직관적인 코드 분석을 가능하게 한다.
 
+<!--more-->
+
 객체 지향 프로그래밍의 중요한 특성은 **\_강한 응집력(Strong Cohesion)과 약한 결합력(Weak Coupling)을 지향한다는** 점이다.
 
 **응집력(Strong Cohesion)**
