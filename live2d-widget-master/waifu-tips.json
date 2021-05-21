@@ -1,0 +1,35 @@
+{
+	"mouseover": [{
+		"selector": "#waifu #live2d",
+		"text": ["으.. 빨리 치워 주세요", "안녕하세요~", "뭐 보러 왔나요?", "야용?야옹?", "파이팅(ノ≧∇≦)ノ", "EZ~", "Hentai！", "byte는 1byte!", "short는 2byte", "int는 4byte", "long는 8byte", "float는 4byte", "double는 8byte"]
+	},{
+		"selector": "#waifu-tool .fa-comment",
+		"text": ["자바의 최초개발자는 누구 일까요?", "빠밤! '제임스 아서 고슬링' 입니다!"]
+	}, {
+		"selector": "#waifu-tool .fa-paper-plane",
+		"text": ["비행기 놀이나 할까?", "이 버튼에는「클릭하지 마세요」라고 쓰여 있어요", "왜 나랑 놀고 싶어요?", "듣자니 이렇게 하면 번디딜 수 있다고 하더라!"]
+	}, {
+		"selector": "#waifu-tool .fa-user-circle",
+		"text": ["너 사람 안 사랑하냐 우우우~", "우리 누나 좀 만나볼래요?", "내 여동생을 보고 싶어?", "이 버튼을 누르면 변경 할 수 있어요!"]
+	}, {
+		"selector": "#waifu-tool .fa-street-view",
+		"text": ["메이크업 좋아하세요?", "이번엔 뭘 할 건가요?", "메이크업!", "다음엔 어떤 일이 벌어질지 보자!"]
+	}, {
+		"selector": "#waifu-tool .fa-times",
+		"text": ["이제 안녕이라고 말할 때가 되었나요?", "QAQ 다음에 봐요..", "날 버리지 마요..", "우리, 다시 만날 수 있을까요?", "흥, 너는 후회할 거야!"]
+	}],
+	"click": [{
+		"selector": "#waifu #live2d",
+		"text": ["조심하지 않아서 부딪쳤나 봐…", "1일 1commit!!!", "과제 하기 싫죠..", "집 가고 싶다!!", "Paython?", "Java?", "React?"]
+	}, {
+		"selector": ".veditor",
+		"text": ["무엇을 알려 드릴까요?", "파이팅!", "하고 싶은 말 있어?"]
+	}],
+	"seasons": [{
+		"date": "01/01",
+		"text": "<span>설날</span>heppey noew{year}"
+	},{
+		"date": "12/25",
+		"text": "<span>메리크리스마스!</span>"
+	}]
+}
