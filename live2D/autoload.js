@@ -1,4 +1,4 @@
-const live2d_path = "/live2d/";
+const live2d_path = "/live2D/";
 
 function loadExternalResource(url, type) {
 	return new Promise((resolve, reject) => {
