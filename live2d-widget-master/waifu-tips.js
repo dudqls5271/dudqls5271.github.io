@@ -103,7 +103,7 @@ function loadWidget(config) {
 			else if (now > 17 && now <= 19) text = "조금 있으면 퇴근 시간 입니다!";
 			else if (now > 19 && now <= 21) text = "오늘 하루는 어떻게 지냈어요?";
 			else if (now > 21 && now <= 23) text = ["벌써 시간이 이렇게 됬네요! 잘자요!", "저녁에는 방에 불을 키고 하세요!"];
-			else text = "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？";
+			else text = "너 혹시 올빼미야? 이렇게 늦께까지 안 자고 내일 어떻게 일어나?";
 		} else if (document.referrer !== "") {
 			const referrer = new URL(document.referrer),
 				domain = referrer.hostname.split(".")[1];
