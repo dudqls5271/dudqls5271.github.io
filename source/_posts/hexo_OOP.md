@@ -1,6 +1,6 @@
 ---
 title: 겍채지향 프로그래밍 이란?
-tags: [java]
+tags: [java, OOP]
 ---
 
 # 객채 지향 프로그래밍
