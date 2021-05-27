@@ -9,27 +9,8 @@
     <atom:link href="http://dudqls5271.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 22 May 2021 15:52:21 GMT</pubDate>
+    <pubDate>Wed, 26 May 2021 14:17:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>hexo 블로그에 live2D 추가 하기</title>
-      <link>http://dudqls5271.github.io/2021/05/23/hexo_live2D/</link>
-      <guid>http://dudqls5271.github.io/2021/05/23/hexo_live2D/</guid>
-      <pubDate>Sat, 22 May 2021 15:51:46 GMT</pubDate>
-      
-      
-      
-      
-      
-      <category domain="http://dudqls5271.github.io/tags/hexo/">hexo</category>
-      
-      <category domain="http://dudqls5271.github.io/tags/live2D/">live2D</category>
-      
-      
-      <comments>http://dudqls5271.github.io/2021/05/23/hexo_live2D/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>겍채지향 프로그래밍 이란?</title>
@@ -51,6 +32,8 @@
       
       
       <category domain="http://dudqls5271.github.io/tags/java/">java</category>
+      
+      <category domain="http://dudqls5271.github.io/tags/OOP/">OOP</category>
       
       
       <comments>http://dudqls5271.github.io/2021/05/13/hexo_OOP/#disqus_thread</comments>
