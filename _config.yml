@@ -159,3 +159,26 @@ live2d:
     show: true
   react:
     opacity: 0.7
+
+robotstxt:
+  useragent: "*"
+  allow:
+    - /
+  sitemap: https://username.github.io/sitemap.xml
+
+  nofollow:
+    enable: true
+    exclude:
+      - exclude1.com
+      - exclude2.com
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false
+  
