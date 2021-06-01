@@ -126,21 +126,6 @@ jsonContent:
     categories: false
     tags: true
 
-# sitemap auto generator
-sitemap:
-  path: sitemap.xml
-
-# rss feed auto generator
-feed:
-  type: rss2
-  path: rss2.xml
-  limit: 20
-
-plugins:
-  google-analytics:
-    # Google Analytics tracking id
-    tracking_id: G-H5ZH0Y9TPZ
-
 live2d:
   enable: true
   scriptFrom: local
@@ -160,25 +145,10 @@ live2d:
   react:
     opacity: 0.7
 
-robotstxt:
-  useragent: "*"
-  allow:
-    - /
-  sitemap: https://username.github.io/sitemap.xml
-
-  nofollow:
-    enable: true
-    exclude:
-      - exclude1.com
-      - exclude2.com
+sitemap:
+  path: sitemap.xml
 
 feed:
   type: rss2
   path: rss2.xml
   limit: 20
-  
-sitemap:
-  path: sitemap.xml
-  tag: false
-  category: false
-  
