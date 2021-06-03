@@ -59,3 +59,43 @@ nofollow:
 ```
 
 ## hexo-generator-feed
+
+- 자동으로 RSS feed를 생성해주는 플러그인 이다.
+
+> 어떤 사이트가 있을 때, 그 사이트를 매일 방문해서 재미있는 새로운 기사가 있는지 확인하는 것은 번거롭습니다. 특히 새 기사가 매일 또는 정기적으로 올라오는 것이 아니라 불규칙할 때는 더욱 그렇습니다.
+> 그 사이트를 직접 방문하지 않고, 새 기사들만 자신의 컴퓨터로 “배달”이 된다면 편리할 것입니다.
+> RSS(Really Simple Syndication 의 약자) 같은 “사이트 피드”란, 새 기사들의 제목만, 또는 새 기사들 전체를 뽑아서 하나의 파일로 만들어 놓은 것입니다.
+> 이제 각 사이트들에서 제공하는 RSS파일 주소만 수집하여 확인하면, 자신의 취향에 맞는 새로운 읽을거리를 쉽게 찾아서 읽을 수 있습니다.
+> 그러나 모든 사이트에서 RSS피드를 제공하는 것은 아닙니다. 1년 내내 새로운 내용이 없는 정적인 사이트에서는 제공하지 않는 것이 보통입니다. 새로운 읽을거리가 자주 올라오는 “뉴스형”, “블로그형” 사이트에서 주로 제공됩니다.</br> <b>RSS Feed</b>
+
+- 설치
+
+```bash
+$ npm install hexo-generator-feed --save
+```
+
+- 사용
+
+```yml
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+```
+
+## 검색엔진 등록하기
+
+- [구글 애널리틱스](https://analytics.google.com/)(Google Analytic)
+  0
+  - 위 사이트에서 가입을 하고 <b>이름과 URL</b>을 입력하고 <b>추척ID</b>를 발급 받는다. </br> 이 아이디는 themes의 <span style="color: red">\_config.yml</span> 내 <span style="color: red">google_analytics</span>에 넣어 준다.
+
+가입이 완료 되면 다음과 같은 화면이 나오는것을 보게 될 것이다.
+
+- 사용
+
+```yml
+plugins:
+  google-analytics:
+    # Google Analytics tracking id
+    tracking_id: UA-*********-1
+```
