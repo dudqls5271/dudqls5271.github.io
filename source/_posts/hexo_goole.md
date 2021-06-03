@@ -94,6 +94,5 @@ feed:
 설정에 들어가면 나는 미리 만들어 놓은것들이 있어서 이렇게 뜨는데 처음 만드는 사람들은 다음과 같이 뜨지 않을것이다.
 위에 <b>계정 만들기</b>을 눌러서 계정을 만들어 준다.
 ![화면 캡처 2021-06-03 232412](https://user-images.githubusercontent.com/49426352/120661993-bb998780-c4c3-11eb-811c-0a5dadfc15e2.png)
-계정을 만들었다면 홈에 검색에 <b style=color:red>"추적 코드"</b>을 검색해준다
-추적 코드를 검색하면 "UA-\***\*\*\*\***-1" 이런 형식으로 나오지 않고 다른 형식으롣 나올 수가 있는데 걱정 하지말고 똑같이 tracking_id에 넣어주면 된다.
-![화면 캡처 2021-06-03 232755](https://user-images.githubusercontent.com/49426352/120662002-bd634b00-c4c3-11eb-9343-2e9c1a2a9171.png)
+![화면 캡처 2021-06-03 232755](https://user-images.githubusercontent.com/49426352/120663571-18497200-c4c5-11eb-9c1e-7e8a72bfa526.png)
+
