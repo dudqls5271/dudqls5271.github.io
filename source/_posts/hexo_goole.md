@@ -90,7 +90,7 @@ feed:
   - 위 사이트에서 가입을 하고 <b>이름과 URL</b>을 입력하고 <b>추척ID</b>를 발급 받는다. </br> 이 아이디는 themes의 <span style="color: red">\_config.yml</span> 내 <span style="color: red">google_analytics</span>에 넣어 준다.
 
 가입이 완료 되면 다음과 같은 화면이 나오는것을 보게 될 것이다.
-
+![화면 캡처 2021-06-03 230347](https://user-images.githubusercontent.com/49426352/120660092-f0a4da80-c4c1-11eb-8de1-2425caf96246.png)
 - 사용
 
 ```yml
