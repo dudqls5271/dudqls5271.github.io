@@ -91,6 +91,10 @@ feed:
 
 가입이 완료 되면 다음과 같은 화면이 나오는것을 보게 될 것이다.
 ![화면 캡처 2021-06-03 230347](https://user-images.githubusercontent.com/49426352/120660092-f0a4da80-c4c1-11eb-8de1-2425caf96246.png)
+![화면 캡처 2021-06-03 232412](https://user-images.githubusercontent.com/49426352/120661993-bb998780-c4c3-11eb-811c-0a5dadfc15e2.png)
+![화면 캡처 2021-06-03 232435](https://user-images.githubusercontent.com/49426352/120661997-bccab480-c4c3-11eb-9012-8ead74c104d3.png)
+![화면 캡처 2021-06-03 232755](https://user-images.githubusercontent.com/49426352/120662002-bd634b00-c4c3-11eb-9343-2e9c1a2a9171.png)
+
 - 사용
 
 ```yml
