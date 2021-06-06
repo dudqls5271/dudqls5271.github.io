@@ -96,8 +96,8 @@ feed:
 ![화면 캡처 2021-06-03 232412](https://user-images.githubusercontent.com/49426352/120661993-bb998780-c4c3-11eb-811c-0a5dadfc15e2.png)
 계정을 다 만들었다면 홈-> 검색창에 <b style="color:red">"추적 코드"</b> 을 검색해준다.
 그러면 측정ID 탭이 나오는데 그걸을 클릭해서 들어가준다.
+
 ![화면 캡처 2021-06-03 232755](https://user-images.githubusercontent.com/49426352/120663571-18497200-c4c5-11eb-9c1e-7e8a72bfa526.png)
 ![화면 캡처 2021-06-03 234231](https://user-images.githubusercontent.com/49426352/120665295-9a866600-c4c6-11eb-81ca-fa1466ec0b6f.png)
 ![화면 캡처 2021-06-03 234419](https://user-images.githubusercontent.com/49426352/120665300-9b1efc80-c4c6-11eb-97e8-b94ab3fb05b4.png)
 ![화면 캡처 2021-06-03 234929](https://user-images.githubusercontent.com/49426352/120665303-9bb79300-c4c6-11eb-8ddd-3824cea3d006.png)
-
