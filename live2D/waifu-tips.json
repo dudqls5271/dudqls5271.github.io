@@ -89,7 +89,7 @@
             "text": ["이미지를 클릭하면 확대됩니다！"]
         }, {
             "selector": ".highlight, .gist",
-            "text": ["코드 복사를 클릭할 수 있습니다!", "GitHub！나 초보야！", "PHP가 최고의 언어입니다!"]
+            "text": ["코드 복사를 클릭할 수 있습니다!", "GitHub！나 초보야！"]
         }, {
             "selector": ".left-col a[href^='/'], .search-title a[href^='/']", 
             "text": ["<span>{text}</span>, 여기로 갈꺼야？", "<span>{text}</span> 구경갑시다!", "<span>{text}</span>, 여기로 가보세요!"]
