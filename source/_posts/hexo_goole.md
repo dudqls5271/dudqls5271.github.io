@@ -1,6 +1,6 @@
 ---
 title: Hexo - 검색엔진 최적화
-tags: [hexo]
+tags: [hexo, SEO]
 ---
 
 ## 검색 엔진 최적화(SEO)
@@ -33,6 +33,8 @@ $ npm install --save hexo-auto-canonical
 head.ejs
   <%- autoCanonical(config, page) %>
 ```
+
+<!--more-->
 
 ## hexo-generator-robotstxt
 
@@ -105,4 +107,4 @@ feed:
 다음과 같은 스크립트 코드가 나오게 된다.
 ![화면 캡처 2021-06-03 234929](https://user-images.githubusercontent.com/49426352/120665303-9bb79300-c4c6-11eb-8ddd-3824cea3d006.png)
 이 스크립트 코드를 head.ejs에 붙어 넣어주면 된다.
-이 과정을 진행하면 확인 하는데 2~3일 정도 걸린다.
+이 과정을 진행하면 확인 하는데 2~3일 정도 걸린다. -끝-
