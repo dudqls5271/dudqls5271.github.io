@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>http://dudqls5271.github.io/tags/SEO/</loc>
+        <lastmod>2021-06-09T13:59:27.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/tags/hexo/</loc>
+        <lastmod>2021-06-09T13:59:27.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://dudqls5271.github.io/tags/OOP/</loc>
         <lastmod>2021-05-26T14:17:57.826Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +26,6 @@
     <url>
         <loc>http://dudqls5271.github.io/tags/java/</loc>
         <lastmod>2021-05-26T14:17:57.826Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://dudqls5271.github.io/tags/hexo/</loc>
-        <lastmod>2021-05-11T14:35:28.401Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
