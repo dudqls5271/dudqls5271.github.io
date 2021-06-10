@@ -88,7 +88,7 @@ feed:
 ## 검색엔진 등록하기
 
 - [구글 애널리틱스](https://analytics.google.com/)(Google Analytic)
-  0
+
   - 위 사이트에서 가입을 하고 <b>이름과 URL</b>을 입력하고 <b>추척ID</b>를 발급 받는다. </br> 이 아이디는 themes의 <span style="color: red">\_config.yml</span> 내 <span style="color: red">google_analytics</span>에 넣어 준다.
 
 가입이 완료 되면 다음과 같은 화면이 나오는것을 보게 될 것이다.
