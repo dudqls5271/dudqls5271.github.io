@@ -56,6 +56,13 @@ def random_Word() :
         break
 ```
 
+try_num는 남은 횟수를 저장하는 변수 이다.
+
+처음에 user_ch에 알파벳을 입력 해주면
+for문을 통해 word_list와 비교를 한다.
+
+만약에 사용자가 입력한 값과 word_list와 같다면
+
 ```python
 def ex():
     try_num = 10
