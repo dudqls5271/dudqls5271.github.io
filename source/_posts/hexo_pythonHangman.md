@@ -62,6 +62,13 @@ try_num는 남은 횟수를 저장하는 변수 이다.
 for문을 통해 word_list와 비교를 한다.
 
 만약에 사용자가 입력한 값과 word_list와 같다면
+해당 word_list의 값을 \*로변경해준다.
+
+그다음은 try_num -1, score + 1 이된다.
+try_num은 위에서 언급 했던 그대로의 의미 이고 score은 현제 정답의 개수을 의미한다.
+
+만약 try_num이 0이 되면 게임은 처음부터 시작하고
+score가 word_len과 같으면 게임은 정답으로 종료가 되고 새로운 게임이 시작된다.
 
 ```python
 def ex():
@@ -101,8 +108,12 @@ def ex():
         if score == word_len:
             print("정답입니다!")
             break
+```
 
+main에는 while True로 무한 반복 되도록 만들었다.
+만약 게임이 끝나도 바로 다음 게임이 시작되도록 설계한것이다.
 
+```python
 if __name__ == "__main__":
     while True:
         random_Word()
