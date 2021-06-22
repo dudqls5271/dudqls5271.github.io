@@ -10,6 +10,8 @@ random*Word() 에서는 랜덤으로 숫자를 추출해 Word_list을 뽑는다.
 그 다음 Word_list에서 랜덤으로 나온 값을 배열 형태로 만들어서 각각 저장을 한다.
 그리고 word_qust에는 Word_list의 배열의 개수 만큼 *이 있는 배열을 만들어 주는 것이다.
 
+<!--more-->
+
 ```python
 import random
 
@@ -119,5 +121,3 @@ if __name__ == "__main__":
         random_Word()
         ex()
 ```
-
-이상 파이썬으로 행맨 만들이 였다.
