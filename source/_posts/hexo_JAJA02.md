@@ -7,6 +7,8 @@ tags: [java]
 
 우리가 주로 사용하는 값(data)의 종류(type)는 크게 '문자의 숫자'로 나눌 수 있으며, 숫자는 다시 '정수와 실수'로 나눌 수 있다.
 
+<!--more-->
+
 ![그림2](https://user-images.githubusercontent.com/49426352/122957441-e8eb9e00-d3bc-11eb-9601-a1296d08178c.png)
 
 이러한 값(data)의 종류(type)에 따라 값이 지정될 공간의 크기와 저장형식을 정의한 것 이 자료형(data type)이다. 자료형에는 문자형(char),정수형(dyte, short, int, long), 실수형 (float, double)등이 있으며, 변수를 선언할 때는 저장하는 값의 특성을 고려하여 가장 알맞은 자료형을 변수의 타입으로 선택하면 된다.
