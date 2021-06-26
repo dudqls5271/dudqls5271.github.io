@@ -3,7 +3,7 @@ title: 자바 - 3. 기본형(primitive type)
 tags: [java]
 ---
 
-## 논리형((boolean))
+## 논리형(boolean)
 
 논리형(boolean)에서는 한가지 밖에 없다 boolean형 변수에서는 true와 false중 하나를 저장할 수 있으며 기본값은 default 이다.
 
@@ -25,3 +25,5 @@ boolean형 변수는 대답(yes/no), 스위치(on/off) 등 논리구현에 주�
     char ch = "123";    // ""을 이용해 문자형으로 만들어 줌
     char ch = 123;      //오류 숫자형은 문자형인 char에 저장 되지 않는다.
 ```
+
+## 정수형(byte, short, int long)
