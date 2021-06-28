@@ -28,4 +28,4 @@ boolean형 변수는 대답(yes/no), 스위치(on/off) 등 논리구현에 주�
 
 ## 정수형(byte, short, int long)
 
-정수형에는
+정수형에는 byte, short, int long가 있고
