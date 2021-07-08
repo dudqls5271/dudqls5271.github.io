@@ -3,7 +3,7 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>YB_BIN</title>
+    <title>YoungBin</title>
     <link>http://dudqls5271.github.io/</link>
     
     <atom:link href="http://dudqls5271.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
