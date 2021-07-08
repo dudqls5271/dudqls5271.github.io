@@ -256,59 +256,9 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>연산자는 ‘연산을 수행하는 기호’를 말한다. 예를 들어서 ‘+’기호는 덧셈을 연산을 수행하며,<br>‘덧샘 얀산자’라고한다. 자바에서는 사칙연산(+, -, *, /)을 비롯해서 다양한 연산자들을 제공한다.</p>
-<h2 id="1-연산자와-피연산자"><a href="#1-연산자와-피연산자" class="headerlink" title="1 연산자와 피연산자"></a>1 연산자와 피연산자</h2><p>연산자가 연산을 수행하려면 반드시 연산의 대상이 있어야하는데, 이것을 ‘피연산자(operand)’ 라고 한다. 피연산자로 상수, 변수 또는 식 등을 사용 할 수 있다.</p>
-<blockquote>
-<p>연산자(operator) 연산을 수행하는 기호(+, -, *, /)<br>피연산다(operand) 연산자의 작업 대상(변수, 상수, 리터럴, 수식)</p>
-</blockquote>
-<p>다음과 같이 ‘x + 3’ 이라는 식이 있을때 ‘+는 두 피연산자를 더해서 그 결과를 반환 하는 것셈 연산자이고, 변수 x와 상수 3은 연산자의 피연산자이다.</p>
-<h2 id="연산자의-종류"><a href="#연산자의-종류" class="headerlink" title="연산자의 종류"></a>연산자의 종류</h2><p>배워야할 연산자의 개수가 많아서 부담스러울 수 있는데, 기증이 비슷한 것들끼리 묶어놓고 보면 몇 종류 안 된다.</p>
-<table>
-<thead>
-<tr>
-<th>종류</th>
-<th>내용</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>산술 연산자</td>
-<td>+, -, *, /, %, &lt;&lt;, &gt;&gt;</td>
-<td>사칙 연산(+,-,*,/) 과 나머지 연산자 (%)</td>
-</tr>
-<tr>
-<td>비교 연산자</td>
-<td>&gt;, &lt;, &gt;=, &lt;=, == !=</td>
-<td>크고 작음과 같고 다름을 비교</td>
-</tr>
-<tr>
-<td>논리 연산자</td>
-<td>&amp;&amp;, !, &amp;, ^, ~</td>
-<td>‘그리고(AND)’, 와 또는(OR)으로 조건을 연결</td>
-</tr>
-<tr>
-<td>기 타</td>
-<td>(type) ?: instanceof</td>
-<td>형변환 연산자, 삼항연산자, instanceof연산자</td>
-</tr>
-</tbody></table>
-<p>연산자는 위의 표에서 알 수 있는 거처럼, 크게 산술, 비교, 논리 대입 4가지로 나눌 수 있다. 산술, 비교, 대입 연산자는 이미 알고 있는 걸들이고, 논리 연산자도 쉽게 이해가 될 것이다.</p>
-<h2 id="피연산자의-개수에-의한-분류"><a href="#피연산자의-개수에-의한-분류" class="headerlink" title="피연산자의 개수에 의한 분류"></a>피연산자의 개수에 의한 분류</h2><p>피연산자의 갸수로 연산자를 분류하기도 하는데, 피연산자의 개수가 하나면 <b>“단항연산자”</b>, 두개면 <b>“이항연산자”</b>, 세 개면 <b> “삼항연산자” </b>라고 부른다. 대부분의 연산자는 “이항연산자”이고 삼항 연산자는 오직 “? :” 하나 뿐이다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-<span class="number">3</span> -<span class="number">5</span></span><br><span class="line"><span class="comment">// 3앞에 있는 -는 부호연산자 이고</span></span><br><span class="line"><span class="comment">//3과 5 사이에 있는 -는 뺄샘 연산자 이다.</span></span><br></pre></td></tr></table></figure>
-
-<p>위의 식에서는 두 개의 연산자가 포함 되어있는데, 둘다 같은 기호 <b>‘-‘</b>로 나타 내지만 엄연히 다른 연산자 이다.</p>
-<h2 id="산술-변환-usual-arithmetic-conversion"><a href="#산술-변환-usual-arithmetic-conversion" class="headerlink" title="산술 변환(usual arithmetic conversion)"></a>산술 변환(usual arithmetic conversion)</h2><p>이항 연산자는 두 피연산자의 타입이 일치해야 연산이 가능하므로, 피연산자의 타입이 서로 다르다면 연산 전에 형변환 연산자로 타입을 일치 시켜야한다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">float</span> f = <span class="number">20.0f</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">float</span> result = f + (<span class="keyword">float</span>)i;    <span class="comment">//형변환으로 두 피연산자의 타입이 일치 함</span></span><br></pre></td></tr></table></figure>
-
-<p>대부분의 경우, 두 피연산자의 타입 중에서 더 큰 타입으로 일피시키는데, 그 이유는 작은 타입으로 형변환하면 원래의 값이 손실될 가능성이 있기 때문이다.</p>
-<p>이처럼 연산 전에 피연산자 타입의 일치를 위해 자동 형변환되는 것을 <b>‘산술변환’</b> 또는 <b>‘일반 산술 변화’</b>이라 하며 , 이 변환은 이항 연산자에서만 아니라 단항 연산자에서도 일어난다.</p>
-<ol>
-<li><p>두 피연산자의 타입을 같게 일치시킨다. (보다 큰 타입으로 일치)</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> + <span class="keyword">int</span> --&gt; <span class="keyword">long</span> + <span class="keyword">long</span> --&gt; <span class="keyword">long</span></span><br><span class="line"><span class="keyword">float</span> + <span class="keyword">int</span> --&gt; <span class="keyword">float</span> + <span class="keyword">float</span> --&gt; <span class="keyword">float</span></span><br><span class="line"><span class="keyword">double</span> + <span class="keyword">float</span> --&gt; <span class="keyword">double</span> + <span class="keyword">double</span> --&gt; <span class="keyword">double</span></span><br></pre></td></tr></table></figure></li>
-<li><p>피연산자의 타입이 int보다 작은 타입이면 int로 변환된다.</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">byte</span> + <span class="keyword">short</span> --&gt; <span class="keyword">int</span> + <span class="keyword">int</span> --&gt; <span class="keyword">int</span></span><br><span class="line"><span class="keyword">char</span> + <span class="keyword">short</span> --&gt; <span class="keyword">int</span> + <span class="keyword">int</span> --&gt; <span class="keyword">int</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>첫번째는 자동현변환은 피연산자의 값손실 을 최소화 하기 위한 것이다. 두번째 규칙은 int가 가장 효율적인 처리할 수 있는 타입이고, int 보다 작은 타입 (short, char)은 표현 범위가 작아서 연산중에 오버풀로우(overflow)가 발생할 가능성이 높기때문에 만들어 진것 이다.</p>
-
+    
+    <a class="article-more-a" href="/2021/06/29/hexo_JAVA04/#more">more >></a>
+    
     
 
     
@@ -1227,7 +1177,7 @@
                 
                   <img src="https://avatars.githubusercontent.com/u/49426352?v=4">
                 
-                YB_BIN
+                YoungBin
               </a>
             </li>
           
