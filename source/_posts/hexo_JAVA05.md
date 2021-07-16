@@ -12,6 +12,6 @@
 
 ```java
     class OperatorEx1 {
-        public
+        public static
     }
 ```
