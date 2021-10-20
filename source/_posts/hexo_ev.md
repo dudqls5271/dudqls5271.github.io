@@ -16,6 +16,7 @@ tags: [전자정부표준프레임워크, CRUD]
 그러면 추가가 된것을 볼 수 있을 것이다.
 이제 다음과 같이 설정을 해준다.
 ![화면 캡처 2021-10-04 180721](https://user-images.githubusercontent.com/49426352/135825158-2a2acd49-0351-401c-8ab2-9340b3e8b59d.png)
+다음으로
 ![화면 캡처 2021-10-04 181504](https://user-images.githubusercontent.com/49426352/135826709-3ca70678-0f32-40bd-9bb2-432e8c478655.png)
 ![화면 캡처 2021-10-04 181603](https://user-images.githubusercontent.com/49426352/135826715-9d6831d6-9dc0-4395-a973-dba2ded14938.png)
 ![화면 캡처 2021-10-04 181629](https://user-images.githubusercontent.com/49426352/135826721-4d1583f0-13db-4a14-9496-c32b8ff4474b.png)
