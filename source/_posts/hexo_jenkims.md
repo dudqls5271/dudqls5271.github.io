@@ -19,3 +19,4 @@ vi /etc/profile을 들어간다.
 다음으로 가장 아래에 다음과 같은 코드를 입력한다. 
 
 export JAVA_HOME=[자바 실 경로] 
+
