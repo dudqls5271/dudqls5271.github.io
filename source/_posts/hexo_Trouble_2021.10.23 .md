@@ -22,3 +22,5 @@ YYYY-MM-DD, YY-MM-DD, YY.MM.DD, YYYY.MM.DD 등등 여려가지 일것이다. 하
 우리가 원하는 대로 YYYY-MM-DD 형식으로 날짜가 들어 갈 것이다. 
 
 JAVA에서 DB로 값을 넘길때 String 이든 int 든 상관 없이 다 String으로 보내주기 때문에 위 처럼 해도 상관이 없다는것이다. 
+![KakaoTalk_20211022_142249413](https://user-images.githubusercontent.com/49426352/140049807-83d40846-2d8a-4d8a-a781-1421a2548bf5.png)
+![KakaoTalk_20211022_142304652](https://user-images.githubusercontent.com/49426352/140049811-80063664-9e8a-479e-a11d-d82ee32f80d3.png)
