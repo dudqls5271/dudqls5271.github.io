@@ -25,6 +25,6 @@ YYYY-MM-DD, YY-MM-DD, YY.MM.DD, YYYY.MM.DD 등등 여려가지 일것이다. 하
 
 ![KakaoTalk_20211022_142304652](https://user-images.githubusercontent.com/49426352/140049910-be55b8c4-17b6-4fa6-a26e-ae24137f15b1.png)
 
-JAVA에서 DB로 값을 넘길때 String 이든 int 든 상관 없이 다 String으로 보내주기 때문에 위 처럼 해도 상관이 없다는것이다. 
+JAVA에서 DB로 값을 넘길때 String 이든 int 든 상관 없이 다 String으로 보내주기 때문에 위 처럼 해도 상관이 없다는것이다.
 
 
