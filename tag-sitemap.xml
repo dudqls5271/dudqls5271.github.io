@@ -3,6 +3,41 @@
 
 
     <url>
+        <loc>http://dudqls5271.github.io/tags/VMware/</loc>
+        <lastmod>2021-11-28T15:48:39.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/tags/%EC%84%9C%EB%B2%84/</loc>
+        <lastmod>2021-11-28T15:48:39.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/tags/%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85/</loc>
+        <lastmod>2021-11-23T14:57:29.858Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/tags/%EC%A1%B0%EA%B1%B4%EB%AC%B8/</loc>
+        <lastmod>2021-11-05T14:33:27.744Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/tags/java/</loc>
+        <lastmod>2021-11-05T14:33:27.744Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://dudqls5271.github.io/tags/CRUD/</loc>
         <lastmod>2021-11-03T11:40:19.512Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -12,13 +47,6 @@
     <url>
         <loc>http://dudqls5271.github.io/tags/%EC%A0%84%EC%9E%90%EC%A0%95%EB%B6%80%ED%91%9C%EC%A4%80%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC/</loc>
         <lastmod>2021-11-03T11:40:19.512Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://dudqls5271.github.io/tags/%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85/</loc>
-        <lastmod>2021-11-03T11:39:57.523Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -66,13 +94,6 @@
     </url>
 
     <url>
-        <loc>http://dudqls5271.github.io/tags/java/</loc>
-        <lastmod>2021-10-14T14:56:10.024Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://dudqls5271.github.io/tags/while/</loc>
         <lastmod>2021-10-14T14:56:10.023Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -110,13 +131,6 @@
     <url>
         <loc>http://dudqls5271.github.io/tags/%EC%A6%9D%EA%B0%90%EC%97%B0%EC%82%B0%EC%9E%90/</loc>
         <lastmod>2021-10-14T14:56:10.023Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://dudqls5271.github.io/tags/%EC%A1%B0%EA%B1%B4%EB%AC%B8/</loc>
-        <lastmod>2021-10-14T14:56:10.022Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -9,6 +9,30 @@
 
 
     <url>
+        <loc>http://dudqls5271.github.io/2021/11/29/server01/</loc>
+        <lastmod>2021-11-28T15:48:39.735Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/2021/11/03/hexo_Trouble_2021.10.23%20/</loc>
+        <lastmod>2021-11-23T14:57:29.858Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/</loc>
+        <lastmod>2021-11-05T14:33:27.744Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://dudqls5271.github.io/2021/10/14/hexo_ev/</loc>
         <lastmod>2021-11-03T11:40:19.512Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -19,14 +43,6 @@
     <url>
         <loc>http://dudqls5271.github.io/2021/11/03/hexo_Trouble_2021.10.21/</loc>
         <lastmod>2021-11-03T11:39:57.523Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://dudqls5271.github.io/2021/11/03/hexo_Trouble_2021.10.23%20/</loc>
-        <lastmod>2021-11-03T11:39:55.028Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -114,14 +130,6 @@
 
     <url>
         <loc>http://dudqls5271.github.io/2021/10/14/hexo_JAJA02/</loc>
-        <lastmod>2021-10-14T14:56:10.022Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/</loc>
         <lastmod>2021-10-14T14:56:10.022Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
