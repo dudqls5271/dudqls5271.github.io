@@ -13,3 +13,4 @@ VMware에 앞에 VM(Virtual Machine)는 말 그대로 해석하자면 가상의 
 설명은 여기까지 하고 VMware설치에 들어가보자
 
 처음 VMware을 들어가보면 다음과 같은 화면이 나올텐데
+![VMware처음_화면](https://user-images.githubusercontent.com/49426352/143772776-b1a670aa-ea81-4780-9267-231a67f26329.png)
