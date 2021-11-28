@@ -34,3 +34,4 @@ VMware에 앞에 VM(Virtual Machine)는 말 그대로 해석하자면 가상의 
 현제 돌아가고 있는 서버의 저장공간이 나올 것인데 알아서 잘 선택해주면 된다.
 ![스트로지 선택](https://user-images.githubusercontent.com/49426352/143774468-f1fb698c-aec6-47ad-8e9d-025c13076572.png)
 
+![image](https://user-images.githubusercontent.com/49426352/143774712-7daf7c07-d0b2-49f7-94cd-e4bee0f3c766.png)
