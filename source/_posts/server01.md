@@ -43,7 +43,7 @@ VMware에 앞에 VM(Virtual Machine)는 말 그대로 해석하자면 가상의 
 
 방금고 같이 설정을 해줬다면 아래에 생성중인 상태바가 보이게 된다.
 이제 위를 보면 생성이 완료된 것을 볼 수 있을 것이다. 생성된 VM을 클릭하면 상세화면을 볼 수 있다.
-![추가 후 매인 화면](https://user-images.githubusercontent.com/49426352/143774882-ae56949c-821c-4582-ad8c-db09a9948f43.png)
+![추가 메인화면](https://user-images.githubusercontent.com/49426352/143775355-9fbb1348-63fb-4408-bea8-562ed234d1bd.png)
 
 이제 상세화면에 들어가서 상단에 보이는 전원 켜기을 눌러서 전원을 실행 시켜준다.
 ![상세화면](https://user-images.githubusercontent.com/49426352/143774914-4b241506-1bc2-4cf7-8cb1-1d32f289f26b.png)
