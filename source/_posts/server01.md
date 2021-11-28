@@ -13,9 +13,24 @@ VMware에 앞에 VM(Virtual Machine)는 말 그대로 해석하자면 가상의 
 설명은 여기까지 하고 VMware설치에 들어가보자
 
 처음 VMware을 들어가보면 다음과 같은 화면이 나올텐데
-![VMware처음_화면](https://user-images.githubusercontent.com/49426352/143772776-b1a670aa-ea81-4780-9267-231a67f26329.png)
 왼쪽에 보면 "가상시스템"에 들어가서 "VM 생성/등록"에 들어가보면 
+![VMware처음_화면](https://user-images.githubusercontent.com/49426352/143772776-b1a670aa-ea81-4780-9267-231a67f26329.png)
+
+다음과 같은 화면이 나오게 될 것이다.
+여기서 "새 가상 시스템 생성"을 눌러주소 다음을 눌러준다.
 ![생성유형 선택](https://user-images.githubusercontent.com/49426352/143774436-b695748b-9dfd-4283-ae74-736bc79bc2cb.png)
+
+다음은 이름 및 게스트 OS 선택이다.
+여기서는 가상 시스템의 이름, 버전, OS, OS 버전 등을 설정 해준다.
+나는 일단 그림과 같이 설정 해주 었다.
+==============================================
+호환성           :	ESXi 6.5 가상시스템
+게스트 OS 제품군 : Linux
+게스트 OS 버전을 : CentOS 7 (64비트)
+==============================================
 ![이름 및 게스트 OS 선택](https://user-images.githubusercontent.com/49426352/143774439-4e1dcc93-32bd-45f4-982f-441b7fa4ddfb.png)
+
+다음은 스토리지 선택이다.
+현제 돌아가고 있는 서버의 저장공간이 나올 것인데 알아서 잘 선택해주면 된다.
 ![스트로지 선택](https://user-images.githubusercontent.com/49426352/143774468-f1fb698c-aec6-47ad-8e9d-025c13076572.png)
 
