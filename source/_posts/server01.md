@@ -14,3 +14,4 @@ VMware에 앞에 VM(Virtual Machine)는 말 그대로 해석하자면 가상의 
 
 처음 VMware을 들어가보면 다음과 같은 화면이 나올텐데
 ![VMware처음_화면](https://user-images.githubusercontent.com/49426352/143772776-b1a670aa-ea81-4780-9267-231a67f26329.png)
+왼쪽에 보면 "가상시스템"에 들어가서 "VM 생성/등록"에 들어가보면 
