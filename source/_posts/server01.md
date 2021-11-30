@@ -1,6 +1,6 @@
 ---
-title: 서버셋팅 -VMware설치
-tags: [서버, VMware]
+title: 서버셋팅 - VMware설치
+tags: [서버, server, VMware]
 ---
 
 오늘은 얼마전에 회사에서 새로운 프로젝트를 시작해서 서버를 셋팅하는데 그 과정을 설명하는 글이 될 것 같다.
