@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="http://dudqls5271.github.io/2021/10/14/hexo_jaja07/"/>
+  <link rel="canonical" href="http://dudqls5271.github.io/2021/11/30/server02/"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBZ1Z95GNM"></script>
   <!-- <script src="https://cdn.jsdelivr.net/gh/dudqls5271/Live2D@main/live2d-widget-master/live2d.min.js"></script>
@@ -23,23 +23,45 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://dudqls5271.github.io">
-  <title>자바 - 6.조건문. | YoungBin</title>
+  <title>서버셋팅 - CentOS7설치 | YoungBin</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="조건문 - if조건문은 조간식과 문장을 포함하는 블럭 {}으로 구성이 되어 있고, 조건식의 연산결과에 따라 실행할 문장이 달라서 프로그램의 실행흐름을 변경 할 수 있는 것이다. 조건문은 if문과 switch으로 나눠지는데 주로 if문을 많이 사용한다. 처리할 경우의 수가 많을때는 switch을 사용한다고 하는데 나는 if문이 좋다.">
+  <meta name="description" content="오늘은 저번에 올렸던 “서버셋팅 -VMware설치”에 이어서 CentOS7을 설치 해볼 것이다.저번 포스팅이기 때문에 저번 포스팅을 여기!에서 읽고 이 포스팅을 보는 것을 추천한다. 일단 CentOS을 설치 하기 전에 CentOS가 뭔지 알아야 할 것 아닌가?  CentOS는 CentOS 프로젝트에서 레드햇 제휴로 개발한 컴퓨터 운영 체제이다.업스트림 소스">
 <meta property="og:type" content="article">
-<meta property="og:title" content="자바 - 6.조건문.">
-<meta property="og:url" content="http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/index.html">
+<meta property="og:title" content="서버셋팅 - CentOS7설치">
+<meta property="og:url" content="http://dudqls5271.github.io/2021/11/30/server02/index.html">
 <meta property="og:site_name" content="YoungBin">
-<meta property="og:description" content="조건문 - if조건문은 조간식과 문장을 포함하는 블럭 {}으로 구성이 되어 있고, 조건식의 연산결과에 따라 실행할 문장이 달라서 프로그램의 실행흐름을 변경 할 수 있는 것이다. 조건문은 if문과 switch으로 나눠지는데 주로 if문을 많이 사용한다. 처리할 경우의 수가 많을때는 switch을 사용한다고 하는데 나는 if문이 좋다.">
+<meta property="og:description" content="오늘은 저번에 올렸던 “서버셋팅 -VMware설치”에 이어서 CentOS7을 설치 해볼 것이다.저번 포스팅이기 때문에 저번 포스팅을 여기!에서 읽고 이 포스팅을 보는 것을 추천한다. 일단 CentOS을 설치 하기 전에 CentOS가 뭔지 알아야 할 것 아닌가?  CentOS는 CentOS 프로젝트에서 레드햇 제휴로 개발한 컴퓨터 운영 체제이다.업스트림 소스">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-10-14T14:56:10.022Z">
-<meta property="article:modified_time" content="2021-11-05T14:33:27.744Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144038830-e2404df8-9e0b-40c8-8eb2-52c697201d93.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144038849-fb3dfe48-2d57-477d-bdac-f3e491d3cbaf.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144038881-7208eb79-7cf8-4742-8b2b-89eefa68d2e9.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144038983-184215a2-6e14-4c99-9ce5-2d13ca0b531d.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039022-49a67c09-6112-4a52-aec7-07595c691bc4.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039037-63c90d94-48b0-4cfd-a579-958f943b8b89.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039044-a7c5ea41-5e34-4934-8298-c5852cd8bc0d.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039071-af86929b-ace4-4ba8-bae9-e34dd7ad3183.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039085-3ca252ef-7b50-46a0-96b1-1de5b04e1e59.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039094-243890ba-625a-4341-82c2-ae886e29d58f.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039103-3cf122db-7737-4a57-96a1-cfa71074a7e9.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039116-330523c5-2181-40c0-8383-eac395092308.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039125-8230065a-eb40-45f6-bf8d-0a26d59675e1.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039141-bfb747f7-ae07-48f1-9eab-878649b40566.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039150-3be67fbe-74a4-4033-aa47-3845dcf076c1.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039171-69d55c6c-f84b-4ee2-b141-496862070c0e.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039189-ee81af6d-1876-47ef-a332-16ebef56a85a.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039194-bd8317c4-6105-4e2d-9f3d-8d72cede1d4f.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144039198-78f339cb-2372-47c1-87ca-ecbdbd0b9a27.png">
+<meta property="article:published_time" content="2021-11-30T11:28:16.328Z">
+<meta property="article:modified_time" content="2021-11-30T12:01:58.540Z">
 <meta property="article:author" content="LEE Young Bin">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="조건문">
+<meta property="article:tag" content="서버">
+<meta property="article:tag" content="server">
+<meta property="article:tag" content="CentOS7">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/49426352/144038830-e2404df8-9e0b-40c8-8eb2-52c697201d93.png">
   
     <link rel="alternative" href="/" title="YoungBin" type="application/atom+xml">
   
@@ -215,14 +237,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo_JAJA07" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-server02" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      자바 - 6.조건문.
+      서버셋팅 - CentOS7설치
     </h1>
   
 
@@ -234,8 +256,8 @@
               <i class="icon-smile icon"></i> 조회수：<span id="busuanzi_value_page_pv"></span>회
         </span>
 
-<a href="/2021/10/14/hexo_JAJA07/" class="archive-article-date">
-        <time datetime="2021-10-14T14:56:10.022Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
+<a href="/2021/11/30/server02/" class="archive-article-date">
+        <time datetime="2021-11-30T11:28:16.328Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-30</time>
 </a>
 
   
@@ -248,7 +270,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 글자수:</span>
-      <span class="post-count">405자</span>
+      <span class="post-count">490자</span>
     </span>
   </span>
 
@@ -257,7 +279,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 읽는 시간</span>
-      <span class="post-count">2분</span>
+      <span class="post-count">3분</span>
     </span>
   </span>
 </div>
@@ -268,40 +290,75 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="조건문-if"><a href="#조건문-if" class="headerlink" title="조건문 - if"></a>조건문 - if</h3><p>조건문은 조간식과 문장을 포함하는 블럭 {}으로 구성이 되어 있고, 조건식의 연산결과에 따라 실행할 문장이 달라서 프로그램의 실행흐름을 변경 할 수 있는 것이다.</p>
-<p>조건문은 if문과 switch으로 나눠지는데 주로 if문을 많이 사용한다. 처리할 경우의 수가 많을때는 switch을 사용한다고 하는데 나는 if문이 좋다.</p>
-<span id="more"></span>
-
-<h3 id="if문"><a href="#if문" class="headerlink" title="if문"></a>if문</h3><p>if문은 가장 기본적은 조건문이고, ‘조건식’과 괄호{}로 이루어져 있다. if의 뜻이 ‘만약 ~ 이라면’ 임으로 ‘만일 조건식이 참(true)이면 괄호{} 안의 문장들을 수행하라’라는 의미로 이해하면 된다..</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">if</span> (조건식) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 조건식이 참이면(true)일 떄 수행할 문장들을 적는다 .</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>만일 다음과 같은 if문이 있을떄, 조건식 ‘score &gt; 60’이 참(true)이면 괄호{} 안의 문장이 수행되어 화면에 “합격입니다.” 라고 출력되고 거짓(false)이면, if문의 다음 문장으로 넘어간다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(score &gt; <span class="number">60</span>) &#123;</span><br><span class="line">   System.out.println(<span class="string">&quot;합격입니다.&quot;</span>);ㅣ</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>위 if문의 조건식이 평가되는 과정을 단계별로 살펴보면 다음과 같다. 변수 score의 값을 80으로 가정 하면</p>
+    <p>오늘은 저번에 올렸던 <b>“서버셋팅 -VMware설치”</b>에 이어서 CentOS7을 설치 해볼 것이다.<br>저번 포스팅이기 때문에 저번 포스팅을 <a href="https://dudqls5271.github.io/2021/11/29/server01/">여기!</a>에서 읽고 이 포스팅을 보는 것을 추천한다.</p>
+<p>일단 CentOS을 설치 하기 전에 CentOS가 뭔지 알아야 할 것 아닌가?</p>
 <blockquote>
-<p>-&gt; score &gt; 60</p>
+<p>CentOS는 CentOS 프로젝트에서 레드햇 제휴로 개발한 컴퓨터 운영 체제이다.<br>업스트림 소스인 레드햇 엔터프라이즈 리눅스와 완벽하게 호환되는 무료 기업용 컴퓨팅 플랫폼을 제공할 목적으로 만들어진 리눅스계 운영 체제 가운데 하나다.<br>출처 - 위키백과</p>
 </blockquote>
-<pre><code>-&gt; 80 &gt; 60
--&gt; true
-</code></pre>
-<p>위 조건식의 결과는 ‘true’이므로 if문 괄호{} 만의 문장이 실행된다. 만일 조건식의 결과가 ‘false’이면, 괄호{} 안의 문장은 수행되지 않을 것이다.</p>
-<h3 id="조건식"><a href="#조건식" class="headerlink" title="조건식"></a>조건식</h3><p>if문에 사용되는 조건식은 일반적으로 비교연산자와 논리연산자로 구성된다. 이미 연산자를 배울 때 알려줬으니 넘어 가도록 하겠다.</p>
-<p>조건식을 작성항 때 실수 하기 쉬운 것이, 등가비교 연산자 ‘==’ 대신 대입 연산자 ‘=’를 사용하는 것이다. 예를 들어서 ‘x가 0일 때 참’인 조건식은 ‘x == 0’인데 아래와 같이 실수로 ‘x = 0’이라고 적는 경우도 있다.</p>
-<h3 id="if-else문"><a href="#if-else문" class="headerlink" title="if-else문"></a>if-else문</h3><p>if-else문은 ‘그 밖에 다른’ 이므로 조건식의 결과가 참이 아닐때, 즉 거짓이면 반환 하는 값이라고 생각하면 좋다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (조건식) &#123;</span><br><span class="line">    <span class="comment">// 조건식이 참 이면 실생 할 문장</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 조건식이 거짓 이면 실생 할 문장</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="if-else-if-문"><a href="#if-else-if-문" class="headerlink" title="if-else if 문"></a>if-else if 문</h3><p>위에서 설명한 것에 따르면 if-else문은 2가지 경우 밖에 처리를 못하는데 지금 부터 말하는 if-else if문은 여러게의 조건들을 처리 할 수 있다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(조건식) &#123;</span><br><span class="line">    <span class="comment">// 조건식이 참 이면 실생 할 문장</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (조건식) &#123;</span><br><span class="line">    <span class="comment">// 조건식이 참 이면 실생 할 문장</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 조건식이 거짓 이면 실생 할 문장</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="중첩-if문"><a href="#중첩-if문" class="headerlink" title="중첩 if문"></a>중첩 if문</h3><p>중첩 if문은 말 그대로 if문을 중첩 해서 사용한다는 말 이다. 점수로 예를 들어보자</p>
+<p>일단 저번 포스팅에서 VMware을 이용하서 공간을 나눠줬다면 이번에는 운영체제를 설치 할 순서 인것이다.</p>
+<p>저번 포스팅에서 설정해준 VMware을 켜주는 것 까지 했는데, 상세화면을 클릭하면 아래와 같은 화면을 볼 수 있다.<br>여기서 인스톨을 선택하여 실행해준다.<br><img src="https://user-images.githubusercontent.com/49426352/144038830-e2404df8-9e0b-40c8-8eb2-52c697201d93.png" alt="image"></p>
+<p>인스톨을 선택해서 들어가면 다음과 같은 화면이 나오는데<br>여기서 언어는 한국어를 선택해주면 된다.<br><span style="color:red;"><b>여기서 영어나 다른 언어를 선택한다면 나중에 터미널에서 귀찮게 다시 한글 셋팅을 해주어야 한다.</b></span><br><img src="https://user-images.githubusercontent.com/49426352/144038849-fb3dfe48-2d57-477d-bdac-f3e491d3cbaf.png" alt="image"></p>
+<p>이제 설치 할 옵션을을 정해줘야하는데 이글에서는 디스크 / 소프트웨어 / 네트워크를 셋팅 해줄 것이다.<br>아래 화면에 나오는 것처럼 <span style="color:red;"><b>설치대상</b></span>을 클릭을 해준다.<br><img src="https://user-images.githubusercontent.com/49426352/144038881-7208eb79-7cf8-4742-8b2b-89eefa68d2e9.png" alt="image"></p>
+<p>로컬 표준 디스크 - 여기서는 저번글에서 만들어 줬던 백업용 디스크가 같이 나오게 되는데 이것을 <span style="color:red;"><b>2개다</b></span> 클릭해준다.<br>기타 저장소 옵션 - 여기서 보면 <span style="color:red;"><b>파티션을 자동으로 설정 합니다</b></span>에 체크가 되어 있을 것인데 이것을 <span style="color:red;"><b>파티션을 설정합니다.</b></span>로 변경해준다.<br>다음과 같은 설정을 해주었다면 상단에 있는 완료 버튼을 눌러준다.<br><img src="https://user-images.githubusercontent.com/49426352/144038983-184215a2-6e14-4c99-9ce5-2d13ca0b531d.png" alt="image"></p>
+<p>완료 버튼을 누르면 다음과 같이 파티션을 나누는 설정으로 가게 된다. 여기서 밑에 보이는 + 버튼을 통해 다음과 같은 파티션을 만들어 준다.<br><img src="https://user-images.githubusercontent.com/49426352/144039022-49a67c09-6112-4a52-aec7-07595c691bc4.png" alt="image"> <img src="https://user-images.githubusercontent.com/49426352/144039037-63c90d94-48b0-4cfd-a579-958f943b8b89.png" alt="image"></p>
+<p>다음과 같은 방식으로 만드어 준다. 여기서 보면 아래와 같이 및 기타 1을 보게 될 수 있는데, 이것을 처음에는 백업용 디스크를 잡아줘서 그런 것이다.<br>여기서 주위 해야 할 점은 장치에 VMware Virtual disk (sda), VMware Virtual disk (sdd)이 같은 것 처럼 보이지만 다른 2가지가 있다.<br>이것을 잘 구분 하여 파티션을 나줘 주길 바란다.<br><img src="https://user-images.githubusercontent.com/49426352/144039044-a7c5ea41-5e34-4934-8298-c5852cd8bc0d.png" alt="image"></p>
+<p>아래을 참고하여 나머지 파티션들도 만들어 준다. 사진 옆에 간단한 표를 넣어 주겠다.<br><img src="https://user-images.githubusercontent.com/49426352/144039071-af86929b-ace4-4ba8-bae9-e34dd7ad3183.png" alt="image"><br>아래 표에서 /는 남은 용량 전부를 넣어주면 된다.</p>
+<table>
+<thead>
+<tr>
+<th>마운트 지점</th>
+<th>용량</th>
+<th>장치</th>
+<th>파일시스템</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/boot</td>
+<td>500M</td>
+<td>sda</td>
+<td>ext4</td>
+</tr>
+<tr>
+<td>/backup</td>
+<td>50G</td>
+<td>sdb</td>
+<td>ext4</td>
+</tr>
+<tr>
+<td>/swap</td>
+<td>2G</td>
+<td>sda</td>
+<td>ext4</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>30G</td>
+<td>sda</td>
+<td>ext4</td>
+</tr>
+<tr>
+<td>/</td>
+<td>나머지 용량</td>
+<td>sda</td>
+<td>ext4</td>
+</tr>
+</tbody></table>
+<p>모든 파티션을 만들어주고 완료 버튼을 누르면 다음과 같은 화면이 나오게 된다. 여기서 변경 사항 적용을 눌러주면 된다.<br><img src="https://user-images.githubusercontent.com/49426352/144039085-3ca252ef-7b50-46a0-96b1-1de5b04e1e59.png" alt="image"></p>
+<p>다음은 소프트웨어 선택을 눌러 작업을 진행 해줄 것이다.<br><img src="https://user-images.githubusercontent.com/49426352/144039094-243890ba-625a-4341-82c2-ae886e29d58f.png" alt="image"></p>
+<p>클릭을 하면 다음과 같은 화면들이 나오게 되는데<br>여기서 <span style="color:red;"><b>기본환경-&gt; 기본 웹 서버</b></span>을 선택해주고 추가 옵션은 선택하지 않는다.<br><img src="https://user-images.githubusercontent.com/49426352/144039103-3cf122db-7737-4a57-96a1-cfa71074a7e9.png" alt="image"></p>
+<p>다음은 네트워크 및 호스팅명을 선택해서 들어가준다.<br><img src="https://user-images.githubusercontent.com/49426352/144039116-330523c5-2181-40c0-8383-eac395092308.png" alt="image"></p>
+<p>여기서 이더넷 부분이 꺼져있을 것인데. 이것을 켬으로 변경해주면 유동 ip로 셋팅이 된다.<br><img src="https://user-images.githubusercontent.com/49426352/144039125-8230065a-eb40-45f6-bf8d-0a26d59675e1.png" alt="image"></p>
+<p>위에서 했던 모든 설정을 끝내면 설치 시작 이라는 버튼이 활성화가 될 것인데, 나는 스크린샷을 찍지 않아서 기존에 있던 것을 사용해서 아래와 같이 나오는 것이다.<br><img src="https://user-images.githubusercontent.com/49426352/144039141-bfb747f7-ae07-48f1-9eab-878649b40566.png" alt="image"></p>
+<p>여기서 부터는 너무 쉬워서 따로 캡처를 하지 않았다. 여기서 ROOT암호와 사용자 생성을 해주면 끝난다.</p>
 <blockquote>
-<p>90점이 A 라고 하고 90 이상중에서 98점은 A+ 이다</p>
+<p><span style="color:red;"><b>주위!!<br>ROOT암호와 사용자 생성은 무조건 메모장이나 해당프로젝트 README 파일에 꼭 저장 해줘야 한다.</b></span></p>
 </blockquote>
-<p>위의 조건을 한번 해보자면 다음과 같아 진다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(A &gt;= <span class="number">90</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span>(A &gt;= <span class="number">98</span>) &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>이런식으로 if문안에 if를 넣는것을 중복 if 라고 한다. 한번에 처리 하기 어렵도 조건이 2개 이상 있으면 사용하기 좋다.</p>
+<p>설치가 완료 되었으면 재부팅 버튼을 눌러서 재부팅 후 로그인해준다.<br><img src="https://user-images.githubusercontent.com/49426352/144039150-3be67fbe-74a4-4033-aa47-3845dcf076c1.png" alt="image"></p>
+<p>재부팅을 해주면 다음과 같이 로그인을 하라는 창이 나오는데 아까 만들어 줬던 ROOT 이름과 암호로 로그인 해주면 된다.<br><img src="https://user-images.githubusercontent.com/49426352/144039171-69d55c6c-f84b-4ee2-b141-496862070c0e.png" alt="image"></p>
+<p>로그인을 해주면 다음과 같은 화면이 나오게 되는데<br>여기서 yum update을 통해서 업데이트를 받아주면 된다.<br><img src="https://user-images.githubusercontent.com/49426352/144039189-ee81af6d-1876-47ef-a332-16ebef56a85a.png" alt="image"></p>
+<p>업데이트 중간에 다음과 같은화면이 나올 것인데 당황 하지말고 Y을 입력 해주고 엔터를 누르면 된다.<br><img src="https://user-images.githubusercontent.com/49426352/144039194-bd8317c4-6105-4e2d-9f3d-8d72cede1d4f.png" alt="image"></p>
+<p>Complete!가 뜨면 완료가 된 것이다.<br><img src="https://user-images.githubusercontent.com/49426352/144039198-78f339cb-2372-47c1-87ca-ecbdbd0b9a27.png" alt="image"></p>
+<p>이상으로 CentOS7설치를 마친다.</p>
 
     
 
@@ -343,7 +400,7 @@
         </li>
         <li>
           <strong>Github : </strong>
-          <a href="http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/" title="자바 - 6.조건문." target="_blank">http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/</a>
+          <a href="http://dudqls5271.github.io/2021/11/30/server02/" title="서버셋팅 - CentOS7설치" target="_blank">http://dudqls5271.github.io/2021/11/30/server02/</a>
         </li>
         
         <li>
@@ -365,11 +422,19 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">서버</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">조건문</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">server</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CentOS7</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
         		</li>
       		
 		</ul>
@@ -425,7 +490,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://dudqls5271.github.io/2021/10/14/hexo_JAJA07/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://dudqls5271.github.io/2021/11/30/server02/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -440,18 +505,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/10/14/hexo_JAJA02/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          자바 - 2. 변수(Variable) 타입
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/10/14/hexo_JAVA01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">자바 - 1. 변수(Variable) 란?</div>
+    <a href="/2021/11/29/server01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">서버셋팅 - VMware설치</div>
       <i class="icon-circle-right"></i>
     </a>
   
