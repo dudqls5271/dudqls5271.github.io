@@ -1,5 +1,5 @@
 ---
-title: 서버셋팅 - mysql7설치
+title: 서버셋팅 - 설정
 tags: [서버, server, CentOS7, Linux, mysql]
 ---
 
