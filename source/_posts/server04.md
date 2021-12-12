@@ -1,5 +1,5 @@
 ---
-title: 서버셋팅 - 케리터셋
+title: 서버셋팅 - 케리터셋 설정
 tags: [서버, server, CentOS7, Linux, mysql]
 ---
 ![image](https://user-images.githubusercontent.com/49426352/144711004-9d84c4eb-eb4f-4121-8720-0f13e6b9d092.png)
