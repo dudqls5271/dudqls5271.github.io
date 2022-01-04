@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="http://dudqls5271.github.io/tags/연산자/"/>
+  <link rel="canonical" href="http://dudqls5271.github.io/2021/12/23/server04/"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBZ1Z95GNM"></script>
   <!-- <script src="https://cdn.jsdelivr.net/gh/dudqls5271/Live2D@main/live2d-widget-master/live2d.min.js"></script>
@@ -23,19 +23,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://dudqls5271.github.io">
-  <title>Tag: 연산자 | YoungBin</title>
+  <title>서버셋팅 - 케리터셋 설정 | YoungBin</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="개인 공부 및 작업물 공유">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YoungBin">
-<meta property="og:url" content="http://dudqls5271.github.io/tags/%EC%97%B0%EC%82%B0%EC%9E%90/index.html">
+  <meta name="description" content="한참 개발을 하다가 INSERT할 때 한글 깨짐 현상이 있어서 globals.properties에 URL 문제 인가 싶었지만 아니였다.Mysql 접속 후 status을 입력하면 각각의 데이터 타입? 이 보일 것이다. 이 것들을 수정해 줘야 한다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="서버셋팅 - 케리터셋 설정">
+<meta property="og:url" content="http://dudqls5271.github.io/2021/12/23/server04/index.html">
 <meta property="og:site_name" content="YoungBin">
-<meta property="og:description" content="개인 공부 및 작업물 공유">
+<meta property="og:description" content="한참 개발을 하다가 INSERT할 때 한글 깨짐 현상이 있어서 globals.properties에 URL 문제 인가 싶었지만 아니였다.Mysql 접속 후 status을 입력하면 각각의 데이터 타입? 이 보일 것이다. 이 것들을 수정해 줘야 한다.">
 <meta property="og:locale">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144711004-9d84c4eb-eb4f-4121-8720-0f13e6b9d092.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144711006-25031f20-ef3e-40b4-9ce0-acec76fee576.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/49426352/144711009-b33528f4-b80d-45c3-b7a5-8675025e26c9.png">
+<meta property="article:published_time" content="2021-12-23T14:57:46.579Z">
+<meta property="article:modified_time" content="2022-01-04T14:44:53.622Z">
 <meta property="article:author" content="LEE Young Bin">
+<meta property="article:tag" content="서버">
+<meta property="article:tag" content="server">
+<meta property="article:tag" content="CentOS7">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/49426352/144711004-9d84c4eb-eb4f-4121-8720-0f13e6b9d092.png">
   
     <link rel="alternative" href="/" title="YoungBin" type="application/atom+xml">
   
@@ -211,77 +222,258 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-server04" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/10/14/hexo_java06/" class="archive-article-date">
-        <time datetime="2021-10-14T14:56:10.024Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/10/14/hexo_java06/">자바 - 5.논리 연산자.</a>
-	
+    <h1 class="article-title" itemprop="name">
+      서버셋팅 - 케리터셋 설정
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 조회수：<span id="busuanzi_value_page_pv"></span>회
+        </span>
+
+<a href="/2021/12/23/server04/" class="archive-article-date">
+        <time datetime="2021-12-23T14:57:46.579Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-23</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 글자수:</span>
+      <span class="post-count">116자</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 읽는 시간</span>
+      <span class="post-count">1분</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>한참 개발을 하다가 INSERT할 때 한글 깨짐 현상이 있어서 globals.properties에 URL 문제 인가 싶었지만 아니였다.<br>Mysql 접속 후 status을 입력하면 각각의 데이터 타입? 이 보일 것이다. 이 것들을 수정해 줘야 한다.</p>
+<span id="more"></span>
+
+<p><img src="https://user-images.githubusercontent.com/49426352/144711004-9d84c4eb-eb4f-4121-8720-0f13e6b9d092.png" alt="image"></p>
+<p><img src="https://user-images.githubusercontent.com/49426352/144711006-25031f20-ef3e-40b4-9ce0-acec76fee576.png" alt="image"></p>
+<p>exit로 mysql을 나가준 다음에<br>vi /etc/mtsql/my.cnf을 열어준 다음<br>insert모드로 진입 후 </p>
+<p>character-set-server=utf8<br>collation-server=utf8_general_ci</p>
+<p>위에 것을 입력해주면 된다.</p>
+<p>그 후 service mysqld restart로 서버를<br>재시작해 준 다음</p>
+<p><img src="https://user-images.githubusercontent.com/49426352/144711009-b33528f4-b80d-45c3-b7a5-8675025e26c9.png" alt="image"><br>아까 입력했던 status을 입력해주면<br>utf-8로 변경된 것을 볼 수 있다.</p>
+<p>마지막으로</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> DATABASE <span class="operator">&lt;</span>DATABASE<span class="operator">&gt;</span> <span class="type">CHARACTER</span> <span class="keyword">SET</span> <span class="operator">=</span> utf8mb4 <span class="keyword">COLLATE</span> <span class="operator">=</span> utf8mb4_unicode_ci;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="operator">&lt;</span><span class="keyword">TABLE</span><span class="operator">&gt;</span> <span class="keyword">CONVERT</span> <span class="keyword">TO</span> <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_unicode_ci;</span><br></pre></td></tr></table></figure>
+<p>을 통해서 DATABASE와 TABLE의 타입을 수정해준다.</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            UP
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>밥줘<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/kakao.jpg">
+                    <span class="reward-type">카카오페이</span>
+                  </div>
+                  
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>작성자：</strong>
+          LEE Young Bin
+        </li>
+        <li>
+          <strong>Github : </strong>
+          <a href="http://dudqls5271.github.io/2021/12/23/server04/" title="서버셋팅 - 케리터셋 설정" target="_blank">http://dudqls5271.github.io/2021/12/23/server04/</a>
+        </li>
+        
+        <li>
+          <strong>저작권 : </strong>
           
+          본 블로그의 모든 글은 특별 성명서를 제외하고,  <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 이선스 협약을 채택하고 있습니다. 복사 할 때 출처를 밝혀주세요!
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">서버</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">연산자</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">server</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">논리 연산자</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CentOS7</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">비트연산자</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://dudqls5271.github.io/2021/12/23/server04/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2021/12/04/server03/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">서버셋팅 - mysql7설치</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
           </div>
@@ -322,9 +514,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
