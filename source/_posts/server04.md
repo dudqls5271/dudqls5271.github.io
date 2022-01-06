@@ -25,6 +25,7 @@ collation-server=utf8_general_ci
 재시작해 준 다음
 
 ![image](https://user-images.githubusercontent.com/49426352/144711009-b33528f4-b80d-45c3-b7a5-8675025e26c9.png)
+
 아까 입력했던 status을 입력해주면 
 utf-8로 변경된 것을 볼 수 있다.
 
