@@ -28,8 +28,8 @@ collation-server=utf8_general_ci
 
 아까 입력했던 status을 입력해주면 
 utf-8로 변경된 것을 볼 수 있다.
-
 마지막으로
+
 ``` sql 
 ALTER DATABASE <DATABASE> CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 ALTER TABLE <TABLE> CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
