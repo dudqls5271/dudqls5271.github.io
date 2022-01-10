@@ -34,4 +34,4 @@ utf-8로 변경된 것을 볼 수 있다.
 ALTER DATABASE <DATABASE> CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 ALTER TABLE <TABLE> CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
-을 통해서 DATABASE와 TABLE의 타입을 수정해준다.
+위에 있는 것을 통해서 DATABASE와 TABLE의 타입을 수정해준다.
