@@ -23,7 +23,6 @@ collation-server=utf8_general_ci
 
 그 후 service mysqld restart로 서버를
 재시작해 준 다음
-
 ![image](https://user-images.githubusercontent.com/49426352/144711009-b33528f4-b80d-45c3-b7a5-8675025e26c9.png)
 
 아까 입력했던 status을 입력해주면 
