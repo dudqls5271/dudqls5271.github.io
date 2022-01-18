@@ -12,7 +12,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
-    "akilar-live2d-widget": "^1.0.3",
+    "akilar-live2d-widget": "^1.0.8",
     "hexo": "^5.0.0",
     "hexo-asset-link": "^2.1.0",
     "hexo-auto-canonical": "^0.1.1",
