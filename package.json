@@ -38,6 +38,6 @@
     "live2d-widget-model-haruto": "^1.0.5",
     "live2d-widget-model-wanko": "^1.0.5",
     "render": "^0.1.4",
-    "save": "^2.4.0"
+    "save": "^2.5.0"
   }
 }
